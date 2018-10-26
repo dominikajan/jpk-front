@@ -15,10 +15,12 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/*menu*/
 nav {
     background-color: slategray;
     height: 10vh;
     width: 100vw;
+    margin: 0 auto;
     max-width: 1600px;
 }
 
@@ -53,7 +55,10 @@ nav ul li a:hover {
     color: black;
 }
 
+/*calendar*/
 div.cal {
+    max-width: 1600px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -81,17 +86,20 @@ img {
     cursor: pointer;
 }
 
+/*type*/
+div.type {
+    position: relative;
+    top: 80px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 select {
     font-size: 1.4rem;
     padding: 3px 8px;
     position: absolute;
     top: 77px;
     left: 90px;
-}
-
-div.type {
-    position: absolute;
-    top: 120px;
 }
 
 input.nr {
@@ -107,4 +115,18 @@ input.nr {
 
 .show {
     display: block;
+}
+
+/*button submit*/
+div.btn {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+button {
+    position: absolute;
+    top: 230px;
+    left: 235px;
+    padding: 5px 10px;
+    font-size: 1.4em;
 }

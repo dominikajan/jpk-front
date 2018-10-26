@@ -11,21 +11,23 @@
     <script type="text/javascript" language="javascript" src="js/CalendarControl.js"></script>
 
     <!--<script>-->
-        <!--(adsbygoogle = window.adsbygoogle || []).push({-->
-            <!--google_ad_client: "ca-pub-9927149984527168",-->
-            <!--enable_page_level_ads: true-->
-        <!--});-->
+    <!--(adsbygoogle = window.adsbygoogle || []).push({-->
+    <!--google_ad_client: "ca-pub-9927149984527168",-->
+    <!--enable_page_level_ads: true-->
+    <!--});-->
     <!--</script>-->
 
 
 </head>
 <body>
+<!--menu-->
 <nav>
     <ul>
         <li><a href="#">jpk</a></li>
         <li><a href="">reports</a></li>
     </ul>
 </nav>
+<!--calendar-->
 <div class="cal">
     <p>JPK date:</p>
     <table cellpadding="0" cellspacing="0" border="0">
@@ -48,23 +50,9 @@
     </select>
     <input id="purposeNumber" class="nr hide" type="number" min="1">
 </div>
-<script>
-    let select = document.getElementById("purposeSelect");
-    let purposeNumber = document.getElementById("purposeNumber");
-
-    const selectChange = function() {
-        let selectValue = select.options[select.selectedIndex].value;
-        if (selectValue === "correction") {
-            purposeNumber.classList.add("show");
-            purposeNumber.classList.remove("hide");
-        } else {
-            purposeNumber.classList.remove("show");
-            purposeNumber.classList.add("hide");
-        }
-    };
-
-    select.addEventListener("change", selectChange);
-
-</script>
+<div class="btn">
+    <button>Submit</button>
+</div>
+<script src="../main.js"></script>
 </body>
 </html> 
