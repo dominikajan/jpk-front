@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Picker</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/StyleCalender.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <script type="text/javascript" language="javascript" src="js/CalendarControl.js"></script>
+
+    <!--<script>-->
+        <!--(adsbygoogle = window.adsbygoogle || []).push({-->
+            <!--google_ad_client: "ca-pub-9927149984527168",-->
+            <!--enable_page_level_ads: true-->
+        <!--});-->
+    <!--</script>-->
+
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">jpk</a></li>
+        <li><a href="">reports</a></li>
+    </ul>
+</nav>
+<div class="cal">
+    <p>JPK date:</p>
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <input type="text" id="MonthYear" value="" style="width:80px"/>
+                <img alt="Month/Year Picker" onclick="showCalendarControl('MonthYear');" src="images/datepicker.gif"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<!--type-->
+<div class="type">
+    <p>Type:</p>
+
+    <select id="purposeSelect">
+        <option value="">--Please choose an option--</option>
+        <option value="new">New</option>
+        <option value="correction">Correction</option>
+    </select>
+    <input id="purposeNumber" class="nr hide" type="number" min="1">
+</div>
+<script>
+    let select = document.getElementById("purposeSelect");
+    let purposeNumber = document.getElementById("purposeNumber");
+
+    const selectChange = function() {
+        let selectValue = select.options[select.selectedIndex].value;
+        if (selectValue === "correction") {
+            purposeNumber.classList.add("show");
+            purposeNumber.classList.remove("hide");
+        } else {
+            purposeNumber.classList.remove("show");
+            purposeNumber.classList.add("hide");
+        }
+    };
+
+    select.addEventListener("change", selectChange);
+
+</script>
+</body>
+</html> 

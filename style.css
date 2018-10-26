@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: slategray;
+    height: 10vh;
+    width: 100vw;
+    max-width: 1600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    letter-spacing: 1px;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .2s;
+    cursor: pointer;
+    border-right: 2px solid white;
+    padding: 0 30px;
+    line-height: 10vh;
+}
+
+nav ul li:first-child {
+    border-left: 2px solid white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+div.cal {
+    position: relative;
+}
+
+p {
+    position: absolute;
+    font-size: 1.6em;
+    top: 80px;
+    left: 40px;
+}
+
+table {
+    position: absolute;
+    top: 77px;
+    left: 120px;
+}
+
+input, option {
+    height: 26px;
+}
+
+img {
+    position: absolute;
+    left: 88px;
+    top: 5px;
+    cursor: pointer;
+}
+
+select {
+    font-size: 1.4rem;
+    padding: 3px 8px;
+    position: absolute;
+    top: 77px;
+    left: 90px;
+}
+
+div.type {
+    position: absolute;
+    top: 120px;
+}
+
+input.nr {
+    position: absolute;
+    left: 320px;
+    top: 77px;
+    width: 60px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
